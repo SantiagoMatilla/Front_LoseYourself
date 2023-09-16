@@ -7,7 +7,8 @@
 
         <div class="logoAndSearcher">
             <div id="logo">
-                <h1>LOSE_YOURSELF</h1>
+                <img alt="Vue logo" class="logo" src="@/assets/image/Lose_Yourself-Logo-Fondo-Transparente.svg"/>
+                <!-- <h1>LOSE_YOURSELF</h1> -->
             </div>
             <div class="searcherAndCart">
                 <h4>buscador</h4>
@@ -16,13 +17,33 @@
         </div>
             
         <div class="menuAndProfile">
-            <div>
-                <ul class="menuList">
-                    <li class="menuItem"><a href="#">INICIO</a></li>
-                    <li class="menuItem"><a href="#">PRODUCTOS</a></li>
-                    <li class="menuItem"><a href="#">MÚSICA</a></li>
-                    <li class="menuItem"><a href="#">DISEÑOS</a></li>
-                </ul>
+            <div class="menuList">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                            aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PRODUCTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">MÚSICA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">DISEÑOS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
 
             <div class="profile">
@@ -60,6 +81,10 @@
     padding-right: 1em;
     padding-top: 2em;
 }
+.navbar-toggler{
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
 .menuList{
     list-style: none;
     display: flex;
@@ -70,65 +95,25 @@
 #logo{
     padding: 1em;
 }
+#navbarNav{
+    background-color: white;
+    border-radius: 5px;
+    /* border: solid 1px green; */
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
 .menuList li{
     padding: 1em;
-    color: white;
+    background-color: rgb(223, 223, 223);
+    color: black;
+    /* border: solid 1px red; */
+    padding: 0%;
 }
-a{
-    color: white;
-    text-decoration: none;
+.nav-link{
+    padding-left: 1em;
 }
-/* .nav-menu {
-background-color: white;
-} 
-.nav-content {
-display: flex;
-justify-content: space-between;
-padding: 10px 30px;
-align-items: center;
-}
-.nav-items {
-display: flex;
-justify-content: center;
-align-items: center;
-list-style: none;
-margin: 0;
-padding: 0;li {
-    padding: 0 10px;
-    }
-}
-i {
-display: none;
-}
-/*  Mobile version - hidden hamburger menu
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        padding-top: 10px;
-        position: absolute;
-        width: 100%;
-    }
-    .open-menu {
-        opacity: 1;
-        height: 150px;
-    }
-    .closed-menu {
-        opacity: 0;
-        height: 0;
-        padding: 0;
-    }
-    .nav-content {
-        flex-direction: column;
-        z-index: 100;
-        position: relative;
-        transition: all 0.2s ease-out;
-    }
-    .nav-items {
-        flex-direction: column;
-    }
-    i {
-    display: block;
-    text-align: right;
-    padding: 0 10px 10px 0;
-    }
-} */
+
 </style>
