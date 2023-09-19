@@ -7,12 +7,11 @@
 
         <div class="logoAndSearcher">
             <div id="logo">
-                <img alt="Vue logo" class="logo" src="@/assets/image/Lose_Yourself-Logo-Fondo-Transparente.svg"/>
+                <img alt="Vue logo" class="logo img-fluid" src="../../../assets/Lose_Yourself Logo Fondo Transparente.png"/>
                 <!-- <h1>LOSE_YOURSELF</h1> -->
             </div>
             <div class="searcherAndCart">
-                <h4>buscador</h4>
-                <h4>carrito</h4>
+                <font-awesome-icon :icon="['fas', 'cart-shopping']" />
             </div>
         </div>
             
@@ -29,10 +28,13 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">HOME</a>
+                                    <font-awesome-icon :icon="['fas', 'magnifying-glass']" />Search
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">PRODUCTOS</a>
+                                    <a class="nav-link" href="/">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/products">PRODUCTOS</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">MÚSICA</a>
@@ -48,7 +50,7 @@
 
             <div class="profile">
                 <h4>PERFIL</h4>
-                <h4>imagenPerfil</h4>
+                <font-awesome-icon :icon="['far', 'user']" />
             </div>
         </div>
 
@@ -71,7 +73,7 @@
     justify-content: space-between;
     /* border: 2px solid greenyellow; */
 }
-.logoAndSearcher, .searcherAndCart, .menuAndProfile, .profile{
+.logoAndSearcher, .searcherAndCart, .menuAndProfile{
     display: flex;
     flex-direction: row;
     margin: 0px;
@@ -93,7 +95,7 @@
     padding: 1em;
 }
 #logo{
-    padding: 1em;
+    margin-left: 5%;
 }
 #navbarNav{
     background-color: white;
