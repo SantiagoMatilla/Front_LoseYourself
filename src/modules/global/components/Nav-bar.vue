@@ -49,8 +49,8 @@
             </div>
 
             <div class="profile">
-                <h4>PERFIL</h4>
-                <font-awesome-icon :icon="['far', 'user']" />
+                <a href="/login"><h4>PERFIL</h4></a>
+                <a href="/login"><font-awesome-icon :icon="['far', 'user']" /></a>
             </div>
         </div>
 
@@ -116,6 +116,10 @@
 }
 .nav-link{
     padding-left: 1em;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
 </style>
